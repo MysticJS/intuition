@@ -1,0 +1,13 @@
+{
+    "name": "eslint-config-mysticjs",
+    "description": "The official MysticJS shareable ESLint config with support for Typescript, React, and NextJS",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "Chris Hahn <chris@chrishahn.me>",
+    "main": "index.js",
+    "scripts": {
+      "check:lint": "TIMING=1 eslint .",
+      "fix:lint": "eslint . --fix"
+    },
+    "devDependencies": {}
+}
