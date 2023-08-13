@@ -1,0 +1,54 @@
+{
+  "name": "intuition",
+  "private": true,
+  "description": "Intuitive Typescript and React tools for building harmonious web applications",
+  "version": "4.4.4",
+  "license": "MIT",
+  "author": "Chris Hahn <chris@chrishahn.me>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mysticjs/intuition.git"
+  },
+  "homepage": "https://github.com/mysticjs/intuition#readme",
+  "bugs": {
+    "url": "https://github.com/mysticjs/intuition/issues"
+  },
+  "keywords": [
+    "mystic",
+    "intuitive",
+    "intuition",
+    "mystic js",
+    "typescript",
+    "nextjs",
+    "monorepo",
+    "react",
+    "reactjs",
+    "pnpm"
+  ],
+  "scripts": {
+    "check:format": "prettier --check '**/*.{js,ts,tsx,json,md,yaml,yml}'",
+    "check:lint": "turbo run check:lint --color",
+    "check:types": "turbo run check:types --color",
+    "clean:modules": "find . -name node_modules -type d -exec rm -rf {} +",
+    "clean:reset": "pnpm clean:modules; pnpm install",
+    "fix:format": "prettier --write '**/*.{js,ts,tsx,json,md,yaml,yml}'",
+    "pre-commit": "lint-staged",
+    "preinstall": "npx only-allow pnpm",
+    "prepare": "husky install",
+    "test": "turbo run test --color"
+  },
+  "devDependencies": {
+    "husky": "8.0.3",
+    "lint-staged": "13.2.3",
+    "prettier": "3.0.1",
+    "turbo": "1.10.12",
+    "typescript": "5.1.6"
+  },
+  "engines": {
+    "node": ">=18.6.12",
+    "pnpm": ">=8.6.12",
+    "yarn": "must use pnpm",
+    "npm": "must use pnpm"
+  },
+  "packageManager": "pnpm@8.6.12"
+}
